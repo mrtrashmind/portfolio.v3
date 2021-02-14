@@ -1,0 +1,26 @@
+.promo {
+    position: absolute;
+    top: 76px;
+    width: 100%;
+
+    padding: 90px 0 70px 0;
+
+    background: var(--f-color);
+    &__title {
+        width: 500px;
+    }
+    p {
+        margin-bottom: 0;
+        margin-top: 40px;
+        &:nth-child(2) {
+            margin-top: 60px;
+        }
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 40px;
+    }
+}

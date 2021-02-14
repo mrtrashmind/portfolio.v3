@@ -1,0 +1,29 @@
+:root {
+    --s-color: #F9F9F9;
+    --f-color: #101010;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// Other
+@import 'base/fonts.scss';
+
+// Libs
+@import 'libs/bootstrap-reboot.min.scss';
+
+// Blocks
+@import 'blocks/additional.scss';
+@import 'blocks/header.scss';
+@import 'blocks/nav.scss';
+@import 'blocks/promo.scss';

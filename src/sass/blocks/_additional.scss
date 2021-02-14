@@ -1,0 +1,33 @@
+.social {
+    flex: 1 3 37em;
+
+    display: flex;
+    align-items: center;
+    &__item {
+        margin-right: 30px;
+        &:last-child {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 1;
+            a {
+                text-decoration: none;
+
+                color: var(--s-color);
+            }
+        }
+    }
+}
+
+.title {
+    color: var(--s-color);
+    &_fz90 {
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 1.3;
+    }
+    &_fz30 {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 1;
+    }
+}
