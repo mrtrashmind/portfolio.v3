@@ -1,9 +1,5 @@
 .promo {
-    position: absolute;
-    top: 76px;
-    width: 100%;
-
-    padding: 90px 0 70px 0;
+    padding: 166px 0 70px 0;
 
     background: var(--f-color);
     &__title {
@@ -14,6 +10,13 @@
         margin-top: 40px;
         &:nth-child(2) {
             margin-top: 60px;
+        }
+    }
+    &__link {
+        color: #747171; 
+        text-decoration: none;
+        &:hover {
+            color: #747171;
         }
     }
     &__img {

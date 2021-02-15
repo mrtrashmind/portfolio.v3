@@ -1,3 +1,4 @@
+// Переиспользуемые блоки
 .social {
     flex: 1 3 37em;
 
@@ -18,16 +19,31 @@
     }
 }
 
+
+// Заголовки
 .title {
+    line-height: 1;
+
     color: var(--s-color);
     &_fz90 {
         font-weight: 700;
         font-size: 100px;
         line-height: 1.3;
     }
+    &_fz76 {
+        font-weight: 700;
+        font-size: 76px;
+    }
+    &_fz40 {
+        font-weight: 600;
+        font-size: 40px;
+    }
     &_fz30 {
         font-weight: 300;
         font-size: 30px;
-        line-height: 1;
+    }
+    &_fz24 {
+        font-weight: 300;
+        font-size: 24px;
     }
 }

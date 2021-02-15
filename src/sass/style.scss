@@ -18,6 +18,7 @@ body {
 
 // Other
 @import 'base/fonts.scss';
+@import 'base/buttons.scss';
 
 // Libs
 @import 'libs/bootstrap-reboot.min.scss';
@@ -25,5 +26,6 @@ body {
 // Blocks
 @import 'blocks/additional.scss';
 @import 'blocks/header.scss';
-@import 'blocks/nav.scss';
 @import 'blocks/promo.scss';
+@import 'blocks/portfolio.scss';
+@import 'blocks/about.scss';
