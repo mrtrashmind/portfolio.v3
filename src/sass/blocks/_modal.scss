@@ -1,27 +1,32 @@
 .modal {
+
     position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-
+    top: 0;
+    left: 0;
+    z-index: 1050;
     display: none;
-
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100%;
     p {
         margin-bottom: 0;
     }
     &__dialog {
-        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 500px;
 
+        background: var(--s-color);
+    }
+    &__content {
+        position: relative;
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
 
-        width: 400px;
-        height: 400px;
-
-        background: var(--s-color);
+        padding: 40px;
     }
     &__close {
         position: absolute;
@@ -34,8 +39,6 @@
         cursor: pointer;
     }
     &__success {
-        display: none;
-
         font-weight: 400;
         font-size: 24px;
         line-height: 1;

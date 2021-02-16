@@ -124,7 +124,7 @@
             <div class="container">
                 <div class="promo__wrapper">
                     <!-- Заголовок -->
-                    <h1 class="title title_fz90 promo__title">Привет,
+                    <h1 class="title title_fz100 promo__title">Привет,
                         я Роман.</h1>
                     <!-- Описание -->
                     <p class="title title_fz30">Junior Frontend-разработчик. Около 2-ух лет занимаюсь разработкой сайтов.
@@ -262,7 +262,7 @@
                     <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')" class="contacts__form">
                         <input required placeholder="Ваше имя" type="text" name="name" id="name">
                         <input required placeholder="Ваша почта" type="email" name="email" id="email">
-                        <textarea required placeholder="Ваш вопрос" name="text" id="text" cols="30" rows="10"></textarea>
+                        <textarea required placeholder="Ваш вопрос" name="text" id="text" rows="10"></textarea>
                         <button class="button button__contacts">Отправить</button>
                     </form>
                 </div>
@@ -270,19 +270,22 @@
         </section>
         <div class="modal">
             <div class="modal__dialog">
-                <div class="modal__close">
-                    &times;
+                <div class="modal__content">
+                    <div class="modal__close">
+                        &times;
+                    </div>
+                    <div class="modal__success">
+                        Ваш вопрос отправлен!<br>
+                        <br>
+                        Я скоро с вами свяжусь!
+                    </div>
+                    <!-- mail__link находится в additional -->
+                    <div class="modal__error">
+                        Что-то пошло не так :(<br>
+                        <br>
+                        Напишите мне через мессенджер или на <a class="mail__link" href="mailto:support@rafstudio.ru">support@rafstudio.ru</a>
+                    </div>
                 </div>
-                <p class="modal__success">
-                    Ваш вопрос отправлен!<br>
-                    Я скоро с вами свяжусь!
-                </p>
-                <!-- mail__link находится в additional -->
-                <p class="modal__error">
-                    Что-то пошло не так :(<br>
-                    <br>
-                    Напишите мне через мессенджер или на <a class="mail__link" href="mailto:support@rafstudio.ru">support@rafstudio.ru</a>
-                </p>
             </div>
         </div>
     </main>
@@ -315,8 +318,8 @@
                     <!-- mail__link находится в additional -->
                     <p>
                         Roman Rafikov (c) 2019 - 2021.
-                        <a class="mail__link" href="mailto:support@rafstudio.ru">support@rafstudio.ru</a>
                     </p>
+                    <a class="mail__link" href="mailto:support@rafstudio.ru">support@rafstudio.ru</a>
                 </div>
             </div>
         </div>

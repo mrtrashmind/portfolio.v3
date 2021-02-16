@@ -12,12 +12,24 @@
         align-items: center;
     }
     &__info {
-        margin-top: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 40px;
 
         font-weight: 300;
         font-size: 18px;
         line-height: 1;
 
         color: var(--s-color);
+        a {
+            margin-top: 10px;
+
+            text-decoration: none;
+
+            color: var(--s-color);
+        }
     }
 }
