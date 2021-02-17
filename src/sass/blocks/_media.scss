@@ -36,6 +36,9 @@
     .container {
         max-width: 540px;
     }
+    .title_fz76 {
+        font-size: 56px;
+    }
     .portfolio {
         &__list {
             grid-template-columns: minmax(auto, 600px);
