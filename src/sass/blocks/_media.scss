@@ -3,16 +3,13 @@
     .container {
         max-width: 960px;
     }
-    .social__item {
-        &:last-child {
-            display: none;
+    .social {
+        flex: 1 3 20em;
+        &__item {
+            &:last-child {
+                display: none;
+            }
         }
-    }
-    .social__footer-item {
-        &:last-child {
-            display: block;
-        }
-    }
 }
 
 /* Portrait tablets and small desktops */
@@ -22,11 +19,13 @@
     }
     .portfolio {
         &__list {
-            grid-template-areas: 
-            "item1 item1 item1 item2 item2 item2" 
-            "item3 item3 item3 item4 item4 item4"
-            ". item5 item5 item5 item5 ."
-            ;
+            grid-template-columns: repeat(2, minmax(auto, 442px));
+            grid-template-areas: unset;
+        }
+        &__item {
+            &:nth-child(1n+1) {
+                grid-area: unset;
+            }
         }
     }
 }
@@ -41,7 +40,7 @@
     }
     .portfolio {
         &__list {
-            grid-template-columns: minmax(auto, 600px);
+            grid-template-columns: minmax(auto, 386px);
             grid-template-areas: unset;
         }
         &__item {
@@ -94,19 +93,6 @@
             width: 285px;
         }
     }
-    .social__footer {
-        &-item {
-            &:nth-child(3) {
-                flex: unset;
-                margin-right: 0;
-            }
-            &:nth-child(4) {
-                margin-top: 20px;
-            }
-        }
-        flex-flow: wrap;
-        justify-content: center;
-    }
     .header .nav__item {
         font-size: 35px;
     }
@@ -142,4 +128,5 @@
             text-align: center;
         }
     }
+}
 }

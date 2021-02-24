@@ -1,5 +1,5 @@
 .footer {
-    padding: 50px 0;
+    padding-bottom: 50px;
 
     background: var(--f-color);
     p {
@@ -17,13 +17,16 @@
         justify-content: center;
         align-items: center;
 
-        margin-top: 40px;
-
         font-weight: 300;
         font-size: 18px;
         line-height: 1;
 
         color: var(--s-color);
+        p {
+            &:last-child {
+                margin-top: 10px;
+            }
+        }
         a {
             margin-top: 10px;
 

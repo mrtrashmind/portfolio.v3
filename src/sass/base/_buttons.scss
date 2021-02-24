@@ -13,6 +13,10 @@
         line-height: 1;
     }
     &__about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         margin-top: 50px;
 
         border: 2px solid var(--s-color);
@@ -22,8 +26,14 @@
         font-weight: 300;
         font-size: 24px;
         line-height: 1;
+        text-decoration: none;
 
         color: var(--s-color);
+
+        cursor: pointer;
+        &:hover {
+            color: var(--s-color);
+        }
     }
 
     &__contacts {
